@@ -10,6 +10,20 @@ import type { BaseURL } from "../types";
 /**
  * The TandaClient class is responsible for interacting with the Tanda API.
  * It handles authentication, token management, and API request logic.
+ *
+ * @author Dormnic Odhiambo <ayimdomnic@gmail.com>
+ * @version 1.0
+ * ```ts
+ *  export class TransactionRequest extends TandaClient {
+ *      constructor(config?: IConfig) {
+ *          super(config)
+ *      }
+ *
+ *      async makeTransaction(input: MakeTransactionInput) {
+ *         await this.call('transaction/request', options, 'POST')
+ *      }
+ * }
+ * ```
  */
 export class TandaClient {
   /**
