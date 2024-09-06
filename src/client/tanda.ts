@@ -137,7 +137,7 @@ export class TandaClient {
    * @remarks
    * This method automatically attaches the access token in the request headers if available.
    */
-  private async call<T>(
+  public async call<T>(
     url: string,
     options: AxiosRequestConfig = {},
     method: "POST" | "GET" = "POST"
