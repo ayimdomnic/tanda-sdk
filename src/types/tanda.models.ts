@@ -1,6 +1,8 @@
-namespace Tanda.Models {
-    export type Funding = {
-        fundId: string
-
-    }
+export namespace Tanda.Models {
+  export type IB2CRequest = {
+    serviceProviderId: string;
+    merchantWallet: string;
+    amount: string;
+    [key: string]: string;
+  };
 }
